@@ -3,20 +3,18 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Raquel's Portfolio`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Raquel's Portfolio`
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `blog`,
         path: `${__dirname}/blog`,
       },
-      __key: "images",
     },
+    "gatsby-plugin-mdx",
   ],
 };
